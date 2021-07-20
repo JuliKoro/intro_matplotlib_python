@@ -38,4 +38,18 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure(facecolor='slategray')
+    fig.suptitle('Función Cuadrática', c='whitesmoke', fontsize=16, fontweight='bold')
+    ax = fig.add_subplot()
+    ax.plot(x, y, color='springgreen', label='y = x^2')
+    ax.tick_params(axis='x', colors='whitesmoke')
+    ax.tick_params(axis='y', colors='whitesmoke')
+    ax.set_title('y = x^2', c='whitesmoke')
+    ax.set_xlabel('Eje x', c='whitesmoke', fontweight='bold')
+    ax.set_ylabel('Eje y', c='whitesmoke', fontweight='bold')
+    ax.set_facecolor('darkslategray')
+    ax.grid(ls='dashed', c='whitesmoke')
+    ax.legend()
+    plt.show()
+
     print("terminamos")
