@@ -38,18 +38,18 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
-    fig = plt.figure(facecolor='slategray')
-    fig.suptitle('Función Cuadrática', c='whitesmoke', fontsize=16, fontweight='bold')
-    ax = fig.add_subplot()
-    ax.plot(x, y, color='springgreen', label='y = x^2')
-    ax.tick_params(axis='x', colors='whitesmoke')
-    ax.tick_params(axis='y', colors='whitesmoke')
-    ax.set_title('y = x^2', c='whitesmoke')
-    ax.set_xlabel('Eje x', c='whitesmoke', fontweight='bold')
-    ax.set_ylabel('Eje y', c='whitesmoke', fontweight='bold')
-    ax.set_facecolor('darkslategray')
-    ax.grid(ls='dashed', c='whitesmoke')
-    ax.legend()
-    plt.show()
+    fig = plt.figure(facecolor='slategray') # Se crea una figura
+    fig.suptitle('Función Cuadrática', c='whitesmoke', fontsize=16, fontweight='bold') # Título superior
+    ax = fig.add_subplot() # Se crea un subplot
+    ax.plot(x, y, color='springgreen', label='y = x^2') # Se realiza el gráfico
+    ax.tick_params(axis='x', colors='whitesmoke') # Color de la línea de eje x
+    ax.tick_params(axis='y', colors='whitesmoke') # Color de la línea de eje y
+    ax.set_title('y = x^2', c='whitesmoke') # Título al subplot
+    ax.set_xlabel('Eje x', c='whitesmoke', fontweight='bold') # Nombre del eje x
+    ax.set_ylabel('Eje y', c='whitesmoke', fontweight='bold') # Nombre del eje y
+    ax.set_facecolor('darkslategray') # Color del fondo del grafico (subplot)
+    ax.grid(ls='dashed', c='whitesmoke') # Grilla
+    ax.legend() # Leyenda
+    plt.show() # Muestra el gráfico completo
 
     print("terminamos")
