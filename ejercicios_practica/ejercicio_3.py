@@ -34,4 +34,24 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure(facecolor='#23425c') # Se crea una figura
+    fig.suptitle('Tangente Hiperbólica', c='whitesmoke', fontsize=16, fontweight='bold') # Título superior
+    
+    ax = fig.add_subplot() # Se crea un subplot
+    
+    ax.scatter(x, y, color='gold', label='y = tanh(x)', marker='.') # Se realiza el gráfico
+    
+    ax.axvline(0, color='white') # Eje vertical y = 0 (ordenadas)
+    ax.axhline(0, color='white') # Eje horizontal x = 0 (abscisas)
+    
+    ax.tick_params(axis='x', colors='whitesmoke') # Color de la línea de eje x
+    ax.tick_params(axis='y', colors='whitesmoke') # Color de la línea de eje y
+    ax.set_xlabel('Eje x', c='whitesmoke', fontweight='bold') # Nombre del eje x
+    ax.set_ylabel('Eje y', c='whitesmoke', fontweight='bold') # Nombre del eje y
+    ax.set_facecolor('#0e1a25') # Color del fondo del grafico (subplot)
+    ax.grid(ls='dashed', c='whitesmoke') # Grilla
+    ax.legend() # Leyenda
+    
+    plt.show() # Muestra el gráfico completo
+
     print("terminamos")
